@@ -1,0 +1,36 @@
+secret_key_base: lJdNpnNRW5ndgZqaamCLOzVq998PKDg3rIFOy-nCeHU
+port: 3000
+name: cry_rest
+
+logging:
+  severity: debug
+  colorize: true
+  filter:
+    - password
+    - confirm_password
+  context:
+    - request
+    - session
+    - headers
+    - cookies
+    - params
+
+host: 0.0.0.0
+port_reuse: false
+process_count: 1
+# ssl_key_file:
+# ssl_cert_file:
+redis_url: "redis://localhost:6379"
+database_url: postgres://petrnikolasprokop:@localhost:5432/cry_rest_test
+
+session:
+  key: amber.session
+  store: signed_cookie
+  expires: 0
+
+smtp:
+  enabled: false
+
+secrets:
+  description: Store your development secrets credentials and settings here.
+
