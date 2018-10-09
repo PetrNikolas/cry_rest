@@ -35,6 +35,7 @@ Amber::Server.configure do
   # API requests
   routes :web, "/api" do
     get "/posts", PostController, :index_json
+    get "/posts", PostController, :show_json
   end
 
   routes :static do
