@@ -5,14 +5,12 @@ class PostController < ApplicationController
     only [:show, :edit, :update, :destroy] { set_post }
   end
 
+  #
+  # MVC ENDPOINTS
+  #
   def index
     posts = Post.all
     render("index.slang")
-  end
-
-  def index_json
-    posts = Post.all
-    respond_with { json posts.to_json }
   end
 
   def show
@@ -52,6 +50,23 @@ class PostController < ApplicationController
     redirect_to action: :index, flash: {"success" => "Deleted post successfully."}
   end
 
+
+  #
+  # JSON API ENDPOINTS
+  #
+  def index_json
+    posts = Post.all
+    respond_with { json posts.to_json }
+  end
+
+  def show_json
+    respond_with { json post.to_json }
+  end
+
+
+  #
+  # PRIVATE METHODS
+  #
   private def post_params
     params.validation do
       required :title { |f| !f.nil? }
