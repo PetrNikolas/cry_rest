@@ -32,7 +32,9 @@ Amber::Server.configure do
     get "/", HomeController, :index
   end
 
-  routes :api do
+  # API requests
+  routes :web, "/api" do
+    get "/posts", PostController, :index_json
   end
 
   routes :static do

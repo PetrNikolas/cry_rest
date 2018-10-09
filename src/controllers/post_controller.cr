@@ -7,7 +7,12 @@ class PostController < ApplicationController
 
   def index
     posts = Post.all
-    render "index.slang"
+    render("index.slang")
+  end
+
+  def index_json
+    posts = Post.all
+    respond_with { json posts.to_json }
   end
 
   def show

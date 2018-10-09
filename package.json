@@ -1,10 +1,10 @@
 {
   "name": "cry_rest",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cry Rest with Amber",
   "private": true,
   "author": "Petr Nikolas Prokop",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "webpack --config config/webpack/development.js",
     "watch": "webpack -w --config config/webpack/development.js",

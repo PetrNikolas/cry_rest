@@ -1,5 +1,5 @@
 # CryRest
-REST API Starter Kit written in Crystal language.
+REST API and MVC Starter Kit written in Crystal language.
 This is a project written using [Amber](https://amberframework.org). Enjoy!
 
 ## Getting Started
