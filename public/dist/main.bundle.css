@@ -3,7 +3,7 @@
  */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #555; }
+  color: #888; }
 
 h1, .h1,
 h2, .h2,
@@ -14,7 +14,7 @@ h6, .h6 {
   margin-top: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  color: #333; }
+  color: #000; }
 
 /*
  * Override Bootstrap's default container.
@@ -27,7 +27,7 @@ h6, .h6 {
  * Masthead for nav
  */
 .masthead {
-  background-color: #f4994b;
+  background-color: #3602fe;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1); }
 
@@ -37,7 +37,7 @@ h6, .h6 {
   display: inline-block;
   padding: 10px;
   font-weight: 500;
-  color: #ffe4cd; }
+  color: #ddd; }
 
 .nav-item:hover,
 .nav-item:focus {
@@ -63,18 +63,6 @@ h6, .h6 {
 
 .main {
   padding-top: 20px; }
-
-#logo {
-  background-color: #f4994b;
-  background-image: url(/dist/images/logo.png);
-  background-size: contain;
-  width: 200px;
-  height: 278px; }
-
-/* Hide logo in small screens */
-@media (max-width: 767px) {
-  #logo {
-    display: none; } }
 
 .table td, .table th {
   vertical-align: middle; }

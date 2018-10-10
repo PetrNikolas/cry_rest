@@ -1,13 +1,13 @@
 $font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$background-color: #f4994b;
-$nav-item-color: #ffe4cd;
+$background-color: rgb(54, 2, 254);
+$nav-item-color: #ddd;
 
 /*
  * Globals
  */
 body {
   font-family: $font-stack;
-  color: #555;
+  color: #888;
 }
 
 h1, .h1,
@@ -19,7 +19,7 @@ h6, .h6 {
   margin-top: 0;
   font-family: $font-stack;
   font-weight: normal;
-  color: #333;
+  color: #000;
 }
 
 /*
@@ -58,6 +58,7 @@ h6, .h6 {
 .nav .active {
   color: #fff;
 }
+
 .nav .active:after {
   position: absolute;
   bottom: 0;
@@ -74,21 +75,6 @@ h6, .h6 {
 
 .main {
   padding-top: 20px;
-}
-
-#logo {
-  background-color: $background-color;
-  background-image: url("../images/logo.png");
-  background-size:contain;
-  width: 200px;
-  height:278px;
-}
-
-/* Hide logo in small screens */
-@media (max-width: 767px) {
-  #logo {
-    display: none;
-  }
 }
 
 .table td, .table th {
